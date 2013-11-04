@@ -49,3 +49,4 @@ group :development, :test do
 end
 
 gem 'paperclip', ">= 3.5.0"
+gem 'sorcery'
