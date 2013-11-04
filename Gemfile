@@ -47,3 +47,5 @@ end
 group :development, :test do
   gem 'rspec-rails'
 end
+
+gem 'paperclip', ">= 3.5.0"

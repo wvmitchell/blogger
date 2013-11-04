@@ -6,6 +6,11 @@
     <%= link_to tag.name, tag_path(tag) %>
   <% end %>
 </p>
+<% if @article.image.exists? %>
+  <p>
+   <%= image_tag @article.image.url, size: '150x100' %>
+  </p>
+<% end %>
 <%= link_to "<< Back to articles", articles_path %>
 <%= link_to "delete", article_path(@article), method: 'delete', data: {confirm: 'Really?'} %>
 <%= link_to "edit", edit_article_path(@article) %>
